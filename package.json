@@ -1,0 +1,22 @@
+{
+  "name": "snabbpixi",
+  "version": "1.0.0",
+  "description": "A virtual DOM library for Pixi.js",
+  "main": "snabbpixi.js",
+  "repository": "https://github.com/eguneys/snabbpixi",
+  "author": "eguneys",
+  "license": "MIT",
+  "scripts": {
+    "compile": "babel src --out-dir ./",
+    "prepublish": "yarn run compile"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.4",
+    "@babel/preset-env": "^7.5.4",
+    "testiz": "^1.0.5"
+  },
+  "dependencies": {
+    "pixi.js": "^5.0.4"
+  }
+}
