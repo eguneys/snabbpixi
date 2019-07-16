@@ -1,6 +1,6 @@
 {
   "name": "snabbpixi",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A virtual DOM library for Pixi.js",
   "main": "snabbpixi.js",
   "repository": "https://github.com/eguneys/snabbpixi",
