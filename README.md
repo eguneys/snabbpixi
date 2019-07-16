@@ -1,6 +1,8 @@
 # snabbpixi
 A Virtual DOM library for Pixi.js
 
+It only supports `PIXI.Container` and `PIXI.Sprite` but you can extend it to work for custom display containers.
+
 See example project at https://github.com/eguneys/tetris
 
 ## Example
@@ -8,6 +10,8 @@ See example project at https://github.com/eguneys/tetris
 ```javascript
 import * as PIXI from 'pixi.js';
 import { init } from 'snabbpixi';
+
+import { h } from 'snabbpixi';
 
 const app = new PIXI.Application({});
 
@@ -42,3 +46,14 @@ function view() {
   ]);
 }
 ```
+
+## Tagnames
+
+`container` for `PIXI.Container`
+    
+`sprite` for `PIXI.Sprite`
+
+## Properties
+
+All elements support `x, y, width, height, scale` properties.
+Provide `texture` property for `sprite` tag.
